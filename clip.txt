@@ -1,0 +1,4 @@
+1. [x] The bot runs to a gold Loot Chest on an open wooden island; it bursts open with white, green, blue, purple and gold light columns and floating SCARs.
+2. [x] The bot takes the loot, holds the Gold SCAR and shoots Storm soldiers in plain view (muzzle flash, tracer streak, hit flash, eliminated feed).
+3. [x] Wood walls pop up and the bot climbs a 3-level tower of ramps and floors, then wins from the top and dances.
+Weak: the whole tower is only partly in frame from behind the bot; the soldiers are recolored stock armor.

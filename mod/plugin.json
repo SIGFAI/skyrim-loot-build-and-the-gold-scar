@@ -1,0 +1,528 @@
+{
+ "stage": "RoriksteadEdge",
+ "records": [
+  {
+   "type": "Projectile",
+   "from": "DLC1BoltSteelProjectile",
+   "id": "SigfScarBullet",
+   "set": {
+    "Gravity": 0.0,
+    "Speed": 6500,
+    "Range": 20000,
+    "Flags": "MuzzleFlash|Supersonic",
+    "Light": "@SigfBulletGlow",
+    "MuzzleFlash": "@SigfMuzzleFlash",
+    "MuzzleFlashDuration": 0.1,
+    "Explosion": "@SigfScarImpact"
+   }
+  },
+  {
+   "type": "Ammunition",
+   "from": "DLC1BoltSteel",
+   "id": "SigfScarRound",
+   "set": {
+    "Name": "SCAR Round",
+    "Projectile": "@SigfScarBullet",
+    "Damage": 12,
+    "Value": 0,
+    "Weight": 0
+   }
+  },
+  {
+   "type": "Weapon",
+   "from": "DLC1CrossBowEnhanced",
+   "id": "SigfScarCommon",
+   "set": {
+    "Name": "Common SCAR",
+    "Model.File": "sigf\\scar_common.nif",
+    "BasicStats.Damage": 8,
+    "BasicStats.Value": 100,
+    "FirstPersonModel": "@SigfScarFPCommon",
+    "BasicStats.Weight": 1
+   }
+  },
+  {
+   "type": "Weapon",
+   "from": "DLC1CrossBowEnhanced",
+   "id": "SigfScarUncommon",
+   "set": {
+    "Name": "Uncommon SCAR",
+    "Model.File": "sigf\\scar_uncommon.nif",
+    "BasicStats.Damage": 10,
+    "BasicStats.Value": 300,
+    "FirstPersonModel": "@SigfScarFPUncommon",
+    "BasicStats.Weight": 1
+   }
+  },
+  {
+   "type": "Weapon",
+   "from": "DLC1CrossBowEnhanced",
+   "id": "SigfScarRare",
+   "set": {
+    "Name": "Rare SCAR",
+    "Model.File": "sigf\\scar_rare.nif",
+    "BasicStats.Damage": 12,
+    "BasicStats.Value": 900,
+    "FirstPersonModel": "@SigfScarFPRare",
+    "BasicStats.Weight": 1
+   }
+  },
+  {
+   "type": "Weapon",
+   "from": "DLC1CrossBowEnhanced",
+   "id": "SigfScarEpic",
+   "set": {
+    "Name": "Epic SCAR",
+    "Model.File": "sigf\\scar_epic.nif",
+    "BasicStats.Damage": 14,
+    "BasicStats.Value": 2500,
+    "FirstPersonModel": "@SigfScarFPEpic",
+    "BasicStats.Weight": 1
+   }
+  },
+  {
+   "type": "Weapon",
+   "from": "DLC1CrossBowEnhanced",
+   "id": "SigfGoldScar",
+   "set": {
+    "Name": "Legendary Gold SCAR",
+    "Model.File": "sigf\\scar_gold.nif",
+    "BasicStats.Damage": 18,
+    "BasicStats.Value": 5000,
+    "FirstPersonModel": "@SigfScarFPGold",
+    "BasicStats.Weight": 1
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfGlowCommon",
+   "set": {
+    "Color": "#C8CCD4",
+    "Radius": 220,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfGlowUncommon",
+   "set": {
+    "Color": "#3FE02A",
+    "Radius": 240,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfGlowRare",
+   "set": {
+    "Color": "#2D93FF",
+    "Radius": 260,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfGlowEpic",
+   "set": {
+    "Color": "#B04CFF",
+    "Radius": 280,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfGlowGold",
+   "set": {
+    "Color": "#FFB000",
+    "Radius": 340,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Explosion",
+   "from": "MG07LightBeamImpactExplosion",
+   "id": "SigfChestPop",
+   "set": {}
+  },
+  {
+   "type": "Activator",
+   "id": "SigfLootChest",
+   "set": {
+    "Name": "Loot Chest",
+    "Model.File": "sigf\\chest.nif"
+   },
+   "scripts": [
+    {
+     "name": "SigfChest"
+    }
+   ]
+  },
+  {
+   "type": "Ingestible",
+   "from": "ResistMagic50",
+   "id": "SigfShieldPotion",
+   "set": {
+    "Name": "Shield Potion",
+    "Value": 50,
+    "Weight": 0
+   }
+  },
+  {
+   "type": "MiscItem",
+   "from": "Firewood01",
+   "id": "SigfWoodBundle",
+   "set": {
+    "Name": "Wood Bundle",
+    "Value": 5,
+    "Weight": 0
+   }
+  },
+  {
+   "type": "Npc",
+   "from": "EncBandit04MissileNordM",
+   "id": "SigfStormGrunt",
+   "set": {
+    "Name": "Storm Soldier",
+    "Configuration.TemplateFlags": "Stats|Factions|SpellList|AIData|AIPackages|Script|DefPackList|AttackData",
+    "DefaultOutfit": "@SigfStormOutfitB",
+    "Items": [
+     {
+      "Item": {
+       "Item": "@SigfScarRound",
+       "Count": 60
+      }
+     }
+    ]
+   },
+   "scripts": [
+    {
+     "name": "SigfTracked",
+     "properties": {
+      "Tag": "stormgrunt"
+     }
+    },
+    {
+     "name": "SigfFoe",
+     "properties": {
+      "Label": "Storm Grunt"
+     }
+    }
+   ]
+  },
+  {
+   "type": "Npc",
+   "from": "EncBandit04MissileNordM",
+   "id": "SigfStormArcher",
+   "set": {
+    "Name": "Storm Sniper",
+    "Configuration.TemplateFlags": "Stats|Factions|SpellList|AIData|AIPackages|Script|DefPackList|AttackData",
+    "DefaultOutfit": "@SigfStormOutfit",
+    "Items": [
+     {
+      "Item": {
+       "Item": "@SigfScarRound",
+       "Count": 60
+      }
+     }
+    ]
+   },
+   "scripts": [
+    {
+     "name": "SigfTracked",
+     "properties": {
+      "Tag": "stormarcher"
+     }
+    },
+    {
+     "name": "SigfFoe",
+     "properties": {
+      "Label": "Storm Archer"
+     }
+    }
+   ]
+  },
+  {
+   "type": "MagicEffect",
+   "from": "DLC1SunLightFFSelf",
+   "id": "SigfBuildWallFx",
+   "set": {
+    "Name": "Build Wall"
+   },
+   "scripts": [
+    {
+     "name": "SigfBuildFx",
+     "properties": {
+      "Kind": "wall"
+     }
+    }
+   ]
+  },
+  {
+   "type": "MagicEffect",
+   "from": "DLC1SunLightFFSelf",
+   "id": "SigfBuildRampFx",
+   "set": {
+    "Name": "Build Ramp"
+   },
+   "scripts": [
+    {
+     "name": "SigfBuildFx",
+     "properties": {
+      "Kind": "ramp"
+     }
+    }
+   ]
+  },
+  {
+   "type": "MagicEffect",
+   "from": "DLC1SunLightFFSelf",
+   "id": "SigfBuildFloorFx",
+   "set": {
+    "Name": "Build Floor"
+   },
+   "scripts": [
+    {
+     "name": "SigfBuildFx",
+     "properties": {
+      "Kind": "floor"
+     }
+    }
+   ]
+  },
+  {
+   "type": "Spell",
+   "from": "Candlelight",
+   "id": "SigfBuildWall",
+   "set": {
+    "Name": "Build Wood Wall",
+    "Type": "LesserPower",
+    "Effects": [
+     {
+      "BaseEffect": "@SigfBuildWallFx",
+      "Data": {
+       "Magnitude": 1,
+       "Area": 0,
+       "Duration": 1
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Spell",
+   "from": "Candlelight",
+   "id": "SigfBuildRamp",
+   "set": {
+    "Name": "Build Wood Ramp",
+    "Type": "LesserPower",
+    "Effects": [
+     {
+      "BaseEffect": "@SigfBuildRampFx",
+      "Data": {
+       "Magnitude": 1,
+       "Area": 0,
+       "Duration": 1
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Spell",
+   "from": "Candlelight",
+   "id": "SigfBuildFloor",
+   "set": {
+    "Name": "Build Wood Floor",
+    "Type": "LesserPower",
+    "Effects": [
+     {
+      "BaseEffect": "@SigfBuildFloorFx",
+      "Data": {
+       "Magnitude": 1,
+       "Area": 0,
+       "Duration": 1
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfBulletGlow",
+   "set": {
+    "Color": "#FFC030",
+    "Radius": 120,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfMuzzleFlash",
+   "set": {
+    "Color": "#FFD060",
+    "Radius": 130,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "MineWoodplanks04",
+   "id": "SigfWoodWall",
+   "set": {
+    "Model.File": "sigf\\build_wall.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "RRBuildingFloor01",
+   "id": "SigfWoodFloor",
+   "set": {
+    "Model.File": "sigf\\build_floor.nif"
+   }
+  },
+  {
+   "type": "Outfit",
+   "from": "ArmorBladesOutfit",
+   "id": "SigfStormOutfit",
+   "set": {}
+  },
+  {
+   "type": "Outfit",
+   "from": "DawnguardArmorMelee",
+   "id": "SigfStormOutfitB",
+   "set": {}
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfBurstFlash",
+   "set": {
+    "Color": "#FFE9A0",
+    "Radius": 900,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Light",
+   "from": "DefaultTorch01NS_Saturate",
+   "id": "SigfChestGlow",
+   "set": {
+    "Color": "#FFC24A",
+    "Radius": 170,
+    "Flags": "Dynamic"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfScarFPCommon",
+   "set": {
+    "Model.File": "sigf\\scar_common.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfScarFPUncommon",
+   "set": {
+    "Model.File": "sigf\\scar_uncommon.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfScarFPRare",
+   "set": {
+    "Model.File": "sigf\\scar_rare.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfScarFPEpic",
+   "set": {
+    "Model.File": "sigf\\scar_epic.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "StockadeWoodplanks04Snow",
+   "id": "SigfScarFPGold",
+   "set": {
+    "Model.File": "sigf\\scar_gold.nif"
+   }
+  },
+  {
+   "type": "Explosion",
+   "from": "FireballStormImpactExplosionNoDamage",
+   "id": "SigfScarImpact",
+   "set": {
+    "ISRadius": 1
+   }
+  },
+  {
+   "type": "Static",
+   "from": "RRBuildingFloor01",
+   "id": "SigfWoodRamp",
+   "set": {
+    "Model.File": "sigf\\build_ramp.nif"
+   }
+  },
+  {
+   "type": "Npc",
+   "from": "EncBandit04MissileNordM",
+   "id": "SigfCameraman",
+   "set": {
+    "Name": "Cameraman",
+    "Configuration.TemplateFlags": "Stats|Factions|SpellList|AIData|AIPackages|Script|DefPackList|AttackData"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "FXDweCenterLightBeamObservatory",
+   "id": "SigfBeamCommon",
+   "set": {
+    "Model.File": "sigf\\pillarcommon.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "FXDweCenterLightBeamObservatory",
+   "id": "SigfBeamUncommon",
+   "set": {
+    "Model.File": "sigf\\pillaruncommon.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "FXDweCenterLightBeamObservatory",
+   "id": "SigfBeamRare",
+   "set": {
+    "Model.File": "sigf\\pillarrare.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "FXDweCenterLightBeamObservatory",
+   "id": "SigfBeamEpic",
+   "set": {
+    "Model.File": "sigf\\pillarepic.nif"
+   }
+  },
+  {
+   "type": "Static",
+   "from": "FXDweCenterLightBeamObservatory",
+   "id": "SigfBeamGold",
+   "set": {
+    "Model.File": "sigf\\pillargold.nif"
+   }
+  }
+ ]
+}

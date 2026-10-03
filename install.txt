@@ -1,0 +1,1 @@
+Copy the mod's Sigf.esp, Scripts, Meshes, Textures folders into Skyrim Special Edition's Data folder and enable Sigf.esp. Open a Loot Chest, equip the SCAR and use the Build powers to make walls, ramps and floors.
