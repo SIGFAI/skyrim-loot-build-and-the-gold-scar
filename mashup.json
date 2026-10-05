@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "name": "Loot, Build and the Gold Scar",
   "tagline": "Fortnite in Skyrim: the player builds a 3-level tower of wood walls, floors and ramps, kills Fortnite-style soldiers with the gold SCAR held in hand, and opens a Fortnite-style chest that bursts into loot with rarity-colored beams. Look-alike art, close to Fortnite. No storm circ",
+  "how_to_play": [
+    "Build Fortnite-style wood walls, ramps and floors anywhere in Skyrim.",
+    "Open the Magic menu and pick Build Wood Wall, Build Wood Ramp or Build Wood Floor under Powers.",
+    "Use the equipped power like a shout: the piece shows as a blue hologram, then pops up out of the ground.",
+    "Each piece costs one Wood Bundle; you get 12 Wood Bundles and 60 SCAR Rounds a few seconds after loading.",
+    "Load any save or start a new game to get the powers."
+  ],
   "kind": "mashup",
   "games": [
     {
@@ -328,8 +335,5 @@
     "id": "skyrim",
     "status": "draft"
   },
-  "built_at": "2026-10-05T15:26:58.372Z",
-  "notes": [
-    "Copy the mod's Sigf.esp, Scripts, Meshes, Textures folders into Skyrim Special Edition's Data folder and enable Sigf.esp. Open a Loot Chest, equip the SCAR and use the Build powers to make walls, ramps and floors."
-  ]
+  "built_at": "2026-10-05T15:26:58.372Z"
 }
