@@ -1,0 +1,335 @@
+{
+  "id": "sigf/skyrim-loot-build-and-the-gold-scar",
+  "version": "1.0.0",
+  "name": "Loot, Build and the Gold Scar",
+  "tagline": "Fortnite in Skyrim: the player builds a 3-level tower of wood walls, floors and ramps, kills Fortnite-style soldiers with the gold SCAR held in hand, and opens a Fortnite-style chest that bursts into loot with rarity-colored beams. Look-alike art, close to Fortnite. No storm circ",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "skyrim",
+      "role": "host",
+      "engine": "Skyrim Special Edition (Creation Engine, Papyrus) + headless plugin builder (Mutagen) + PapyrusCompiler",
+      "apps": {
+        "steam": "489830"
+      }
+    },
+    {
+      "game": "fortnite",
+      "role": "guest",
+      "label": "Fortnite",
+      "canonical": false
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "skyrim",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "skyrim-loot-build-and-the-gold-scar.zip",
+          "dst": "{game}/Data",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "Meshes/sigf/build_floor.nif",
+              "sha256": "06acb45faaf5567cf16738df2d631c725e35c0db8cdf62bd7827686b2737d0c2"
+            },
+            {
+              "path": "Meshes/sigf/build_ramp.nif",
+              "sha256": "095854833e1d68ca3b3f5dc12e77fd1f5863cf52c90e69fa22e76b766563b94f"
+            },
+            {
+              "path": "Meshes/sigf/build_wall.nif",
+              "sha256": "5d519eabfe602b0609b98f42c30c2f2672d0acd231d7bc60d9cfd826dfd7a263"
+            },
+            {
+              "path": "Meshes/sigf/chest.nif",
+              "sha256": "5feff7b23a22ab50b67434cc3c461cf6e6f52a7fa23132f4f34637e24abf9739"
+            },
+            {
+              "path": "Meshes/sigf/pillarcommon.nif",
+              "sha256": "b201645b66c4ef1e2fd0e2bd8669644908a7732554191512766f1e403b2c9427"
+            },
+            {
+              "path": "Meshes/sigf/pillarepic.nif",
+              "sha256": "ee79eee47b987b7e5e1b86aa88582569e88826e73ade4eec1325b1545af417ee"
+            },
+            {
+              "path": "Meshes/sigf/pillargold.nif",
+              "sha256": "30b34fd79bb88a23465fe82cc0528c43250604c86a3a247ed125e3550fb02ae8"
+            },
+            {
+              "path": "Meshes/sigf/pillarrare.nif",
+              "sha256": "6210e4389de97ca43b13992b71a9287717968546670f4e5cdc264ad8e3fec076"
+            },
+            {
+              "path": "Meshes/sigf/pillaruncommon.nif",
+              "sha256": "6d2e3e702293cd4964dc710c5f27963eeb261eda4c758834b8fc5a818dda85d3"
+            },
+            {
+              "path": "Meshes/sigf/scar_common.nif",
+              "sha256": "c55957d3d1189e782fe25b86a930831ad78e23373718aa3102beec26384888da"
+            },
+            {
+              "path": "Meshes/sigf/scar_epic.nif",
+              "sha256": "0fad1a2fd25e7116cef6f6c9ad4293875fc6132f5d99b8aedfb2cd52cc5219df"
+            },
+            {
+              "path": "Meshes/sigf/scar_gold.nif",
+              "sha256": "b662032cc936cf12beaa4621bb06d42aeb3ea4cf743e08fb5b7b5a9ec8f2a55e"
+            },
+            {
+              "path": "Meshes/sigf/scar_rare.nif",
+              "sha256": "de01d627d44a6763606aa7c6d85f3a73a59c19758f7f8badb089731c12c9bc0e"
+            },
+            {
+              "path": "Meshes/sigf/scar_uncommon.nif",
+              "sha256": "e8f31f12c6fa1620ecf4ac550e462717cd439b8144469b63c9884d087b7a4916"
+            },
+            {
+              "path": "Scripts/SigfBuild.pex",
+              "sha256": "98372b5239d552e3baf107d86306acaf90634bb2a4a7cc65338eea9ac9ea9855"
+            },
+            {
+              "path": "Scripts/SigfBuildFx.pex",
+              "sha256": "7715afe3cbe3a799997c139bd43a60619891045c26544d3d3f0ac8f52f9a0a8f"
+            },
+            {
+              "path": "Scripts/SigfChest.pex",
+              "sha256": "6e2bd1dfdbc9236502085926527e10e67cda5a57ef978458c43925ce825c731d"
+            },
+            {
+              "path": "Scripts/SigfDemo.pex",
+              "sha256": "b0f2678cf5b843c2a8dd6093f9a4f2d3ee97c383b57647215f0163b6d80f565e"
+            },
+            {
+              "path": "Scripts/SigfFoe.pex",
+              "sha256": "cb84a1358ab092f27aa9231aa0a07db4139f95c0fd054870568849d0a9e9bc8e"
+            },
+            {
+              "path": "Scripts/SigfFx.pex",
+              "sha256": "a27a650272cce25679247b6c48a8382947b68292006b3cac955a894967fe1df1"
+            },
+            {
+              "path": "Scripts/SigfKit.pex",
+              "sha256": "4c3d0f02feaae6aa33c78b7ddcc33e01c46723618ae302bae9ca371b522b3013"
+            },
+            {
+              "path": "Scripts/SigfLib.pex",
+              "sha256": "0757bbc53ba4cb1e22e3b5b166ee46158d23bd714ba1ca678dfbf30f178989f0"
+            },
+            {
+              "path": "Scripts/SigfMod.pex",
+              "sha256": "b4c11f97399c6a6c6b04a260887fe420149f1b5f558f159b076e9a9fea615c58"
+            },
+            {
+              "path": "Scripts/SigfTracked.pex",
+              "sha256": "535bf4b8a40c06873b8c748951af1e6e81b385c2fbd81fd6bb597ba9f31f813f"
+            },
+            {
+              "path": "Scripts/Source/SigfBuild.psc",
+              "sha256": "18627e0f672b9f2262ed23e8024ff93ae7c43cad2d47714890c3d03e6cd7616a"
+            },
+            {
+              "path": "Scripts/Source/SigfBuildFx.psc",
+              "sha256": "3fd686525be419d473d79a97a2e2ceb83b706d15bfc2b861a1ab6d8a89f340de"
+            },
+            {
+              "path": "Scripts/Source/SigfChest.psc",
+              "sha256": "cc45f1da8d8dc39618a989d5f1f603b1e75c735b833e4737cffccb72f574ac6b"
+            },
+            {
+              "path": "Scripts/Source/SigfDemo.psc",
+              "sha256": "4de5d3c8c716222a0b954c4ab2a4679297ea4a324412b8809843ea3e59826548"
+            },
+            {
+              "path": "Scripts/Source/SigfFoe.psc",
+              "sha256": "9f49506fa6e75436f89039c23111f5c6f877575305eb807f0b4152bec17ae089"
+            },
+            {
+              "path": "Scripts/Source/SigfFx.psc",
+              "sha256": "5bb310d76b27da204a92b5c3cd9159296ea4104a5a37464c160a81aeda2f623f"
+            },
+            {
+              "path": "Scripts/Source/SigfKit.psc",
+              "sha256": "a3213c96bdb03bbf442024c48db4cb3049cefaec107e123a662a3d7950661934"
+            },
+            {
+              "path": "Scripts/Source/SigfLib.psc",
+              "sha256": "85113ba5b7bff97bd715c28d06a44bca0c657df4033db76b3141b84ce73765f6"
+            },
+            {
+              "path": "Scripts/Source/SigfMod.psc",
+              "sha256": "2d491926a6a81fed787dbcf647018cec56f3ed241e15c75df7acee27eaaf79f4"
+            },
+            {
+              "path": "Scripts/Source/SigfTracked.psc",
+              "sha256": "7e2d5a99e164db45eb5eadc8c89b44b0e494ca335b28cae7422f7d3bfa01f305"
+            },
+            {
+              "path": "Sigf.esp",
+              "sha256": "89bf70d7624f65d82d867f290f25c876b9e6409663f476a0800b594860fc1051"
+            },
+            {
+              "path": "Textures/sigf/chest_gold_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/chest_gold.dds",
+              "sha256": "6ca8f99f9cc6eff6284422704c6f14eb3fd30140ea81d05ba0520afd36d0686c"
+            },
+            {
+              "path": "Textures/sigf/chest_wood_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/chest_wood.dds",
+              "sha256": "c59c41e81f6dc6096ba869943e600980b8fb5a81c7714f97b49c930eb3d757e0"
+            },
+            {
+              "path": "Textures/sigf/fort_plank_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/fort_plank.dds",
+              "sha256": "fc41d1b7d8ca772b9b7d1a7556ef8fce9cd8aca6a83d8479329770930251d13a"
+            },
+            {
+              "path": "Textures/sigf/fort_rope_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/fort_rope.dds",
+              "sha256": "66c326d16f116e91f544692e755dfdbdc83271e4a1c8f7280519d8d4d9158343"
+            },
+            {
+              "path": "Textures/sigf/fort_stick_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/fort_stick.dds",
+              "sha256": "17b48dd7a0aeed5dc00efe304f270ac2b86e941fd08202395daa41b75b1d6050"
+            },
+            {
+              "path": "Textures/sigf/pillar_common_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/pillar_common.dds",
+              "sha256": "0e1eaa2ae8453732a631e92353ffb4e519c1b27ddd6ff434e0beaf8943460f65"
+            },
+            {
+              "path": "Textures/sigf/pillar_epic_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/pillar_epic.dds",
+              "sha256": "de2cf6d3ee2daa2cc6de246ad3f14dfb1d4b10e12a75c1d4b5928d5c12bc3725"
+            },
+            {
+              "path": "Textures/sigf/pillar_gold_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/pillar_gold.dds",
+              "sha256": "51cf0b5e8236cece5dc1bb7c71f8384d28c1250ec554ede7b4823dcab0d6b34c"
+            },
+            {
+              "path": "Textures/sigf/pillar_rare_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/pillar_rare.dds",
+              "sha256": "b1bfc058f2e962ce323dc75a51f1bf489db4a6563683ce017493c0e24ef5eaa9"
+            },
+            {
+              "path": "Textures/sigf/pillar_uncommon_n.dds",
+              "sha256": "94be45c016f3c3bea2f94af34bc7afda070648d00b8e0ddeb05afc7454af0195"
+            },
+            {
+              "path": "Textures/sigf/pillar_uncommon.dds",
+              "sha256": "be25f6dac780acf369e77cbaeb4e2374d42efc435e13e473fd5dc70ff1b48ac1"
+            },
+            {
+              "path": "Textures/sigf/scar_common_n.dds",
+              "sha256": "cf6a082b41e54d6d6dfe0c335123c5af292ae1c13b54b1895f161df8deb24227"
+            },
+            {
+              "path": "Textures/sigf/scar_common.dds",
+              "sha256": "66117f9b3ed53bbd0c1bc2a5326ef64ed90c5162a0ad48fe1ffb5654c6d48bda"
+            },
+            {
+              "path": "Textures/sigf/scar_epic_n.dds",
+              "sha256": "cf6a082b41e54d6d6dfe0c335123c5af292ae1c13b54b1895f161df8deb24227"
+            },
+            {
+              "path": "Textures/sigf/scar_epic.dds",
+              "sha256": "39d89eaed4e6c3dd85ec51e914d674f1752118be31127eedeb2383b3999469ab"
+            },
+            {
+              "path": "Textures/sigf/scar_gold_n.dds",
+              "sha256": "cf6a082b41e54d6d6dfe0c335123c5af292ae1c13b54b1895f161df8deb24227"
+            },
+            {
+              "path": "Textures/sigf/scar_gold.dds",
+              "sha256": "0e031f84ccab898bb5e7b1b67d13b5275f691e50d7549b460932275e9f647c94"
+            },
+            {
+              "path": "Textures/sigf/scar_rare_n.dds",
+              "sha256": "cf6a082b41e54d6d6dfe0c335123c5af292ae1c13b54b1895f161df8deb24227"
+            },
+            {
+              "path": "Textures/sigf/scar_rare.dds",
+              "sha256": "08b8217a1ed1d407300b5a2a1401fa4bec0fc08e73c89e089286c1501052cfb5"
+            },
+            {
+              "path": "Textures/sigf/scar_uncommon_n.dds",
+              "sha256": "cf6a082b41e54d6d6dfe0c335123c5af292ae1c13b54b1895f161df8deb24227"
+            },
+            {
+              "path": "Textures/sigf/scar_uncommon.dds",
+              "sha256": "e304b5e53e22cd104ba674b430f49cd843e5bf6f20e01bbc4423be0e27aab117"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/skyrim-loot-build-and-the-gold-scar/releases/download/v1.0.0/skyrim-loot-build-and-the-gold-scar.zip",
+          "sha256": "0aac7f84bddb8e8b3df9199e2d257c1d5b4f823e569ecbd4b64f94a847b02126",
+          "size": 4493692
+        }
+      ],
+      "overlay": "Data"
+    }
+  ],
+  "launch": [
+    {
+      "game": "skyrim",
+      "args": []
+    }
+  ],
+  "files": [
+    {
+      "name": "skyrim-loot-build-and-the-gold-scar.zip",
+      "url": "https://github.com/SIGFAI/skyrim-loot-build-and-the-gold-scar/releases/download/v1.0.0/skyrim-loot-build-and-the-gold-scar.zip",
+      "sha256": "0aac7f84bddb8e8b3df9199e2d257c1d5b4f823e569ecbd4b64f94a847b02126",
+      "size": 4493692
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/skyrim-loot-build-and-the-gold-scar",
+    "license": "MIT"
+  },
+  "media": {},
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "skyrim",
+    "status": "draft"
+  },
+  "built_at": "2026-10-05T15:26:58.372Z",
+  "notes": [
+    "Copy the mod's Sigf.esp, Scripts, Meshes, Textures folders into Skyrim Special Edition's Data folder and enable Sigf.esp. Open a Loot Chest, equip the SCAR and use the Build powers to make walls, ramps and floors."
+  ]
+}
